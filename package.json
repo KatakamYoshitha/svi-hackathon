@@ -1,0 +1,32 @@
+{
+  "name": "nhaa-svi-module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-enabled Real-Time Stress and Trauma Assessment Module (SVI) for NHAA 14566 / Integrated Portal - prototype",
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "postinstall": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "prisma": "^5.19.1",
+    "tailwindcss": "^3.4.13"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
